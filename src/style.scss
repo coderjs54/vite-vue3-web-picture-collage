@@ -1,0 +1,75 @@
+$text: #333333;
+$text-light: #666666;
+$text-gray: #7C75D4;
+$bg: #e8e8e8;
+$bg-white: #ffffff;
+$border: rgba(0, 0, 0, 0.05);
+$border-light: rgba(0, 0, 0, 0.08);
+$accent: #534AB7;
+$accent-hover: #4338ca;
+$accent-light: rgba(83, 74, 183, 0.03);
+$accent-medium: rgba(83, 74, 183, 0.05);
+$accent-border: rgba(83, 74, 183, 0.3);
+$danger: #ef4444;
+$danger-light: rgba(239, 68, 68, 0.05);
+$danger-border: rgba(239, 68, 68, 0.3);
+$rotate-color: #3B82F6;
+$shadow: 0 1px 4px rgba(0, 0, 0, 0.08);
+$shadow-hover: 0 2px 8px rgba(0, 0, 0, 0.12);
+$shadow-float: 0 2px 12px rgba(0, 0, 0, 0.1);
+
+:root {
+  font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+  font-size: 14px;
+  line-height: 1.5;
+  color: $text;
+  background-color: $bg;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  overflow: hidden;
+}
+
+#app {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+button {
+  font-family: inherit;
+  font-size: inherit;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  transition: all 0.15s ease;
+}
+
+input[type="number"],
+input[type="text"] {
+  font-family: inherit;
+  font-size: inherit;
+  outline: none;
+}
+
+::-webkit-scrollbar {
+  width: 3px;
+  height: 3px;
+  
+  &-track {
+    background: transparent;
+  }
+  
+  &-thumb {
+    background: rgba(0, 0, 0, 0.15);
+    border-radius: 2px;
+  }
+}
